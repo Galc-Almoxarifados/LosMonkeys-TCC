@@ -1,0 +1,15 @@
+<h1>Formulário de Pedido</h1>
+
+<form (ngSubmit)="submitPedido()">
+  <div>
+    <label for="professor">Professor:</label>
+    <input type="text" id="professor" [(ngModel)]="pedido.professor" name="professor" required>
+  </div>
+
+  <div>
+    <label for="materiais">Materiais:</label>
+    <textarea id="materiais" [(ngModel)]="pedido.materiais" name="materiais" required></textarea>
+  </div>
+
+  <button type="submit">Enviar Pedido</button>
+</form>
